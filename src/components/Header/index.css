@@ -1,0 +1,36 @@
+.navbar {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #2c364c;
+  margin: 0px;
+}
+.header-links {
+  display: flex;
+  font-family: Roboto;
+  color: #ffffff;
+}
+.website-logo {
+  height: 40px;
+}
+.logout-button {
+  height: 30px;
+  padding: 10px;
+  background-color: #4f46e5;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: roboto;
+}
+.links {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: bolder;
+  margin-right: 25px;
+}

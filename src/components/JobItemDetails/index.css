@@ -1,0 +1,26 @@
+.job-details-container {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #000000;
+
+  font-family: roboto;
+  color: #ffffff;
+  padding: 50px;
+}
+.job-item-details-container {
+  width: 95%;
+  background-color: #475569;
+  height: 100vh;
+
+  border-radius: 15px;
+  padding: 35px;
+}
+.loader {
+  align-self: center;
+  background-color: #000000;
+  height: 100vh;
+}
+.similar-jobs-heading {
+  color: #ffffff;
+}

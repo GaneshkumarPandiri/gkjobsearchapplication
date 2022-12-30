@@ -1,0 +1,40 @@
+.job-item-card {
+  list-style-type: none;
+}
+.company-logo {
+  height: 70px;
+}
+.job-item-card {
+  padding: 20px;
+  background-color: #475569;
+  border-radius: 15px;
+  width: 800px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-family: Roboto;
+  text-decoration: none;
+}
+.job-title {
+  font-size: 20px;
+}
+.title-top {
+  display: flex;
+  align-items: center;
+}
+.company-rating {
+  margin-left: 20px;
+  align-items: flex-start;
+}
+.package-content {
+  display: flex;
+  justify-content: space-between;
+}
+.location-content {
+  display: flex;
+}
+.location-item-content {
+  margin-right: 25px;
+}
+.job-description {
+  font-size: 20px;
+}

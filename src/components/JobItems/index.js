@@ -14,7 +14,7 @@ const JobItem = props => {
     title,
   } = jobsListItem
   return (
-    <Link to={`/jobs/${id}`}>
+    <Link to={`/jobs/${id}`} className="link-style">
       <li className="job-item-card">
         <div className="title-top">
           <img

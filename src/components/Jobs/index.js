@@ -134,7 +134,7 @@ class Jobs extends Component {
   }
 
   renderLoader = () => (
-    <div className="loader-container" testid="loader">
+    <div className="loader-container">
       <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
     </div>
   )
@@ -248,7 +248,6 @@ class Jobs extends Component {
               type="button"
               className="search-button"
               onClick={this.onSearchIconClick}
-              testid="searchButton"
             >
               <BsSearch className="search-icon" />
             </button>

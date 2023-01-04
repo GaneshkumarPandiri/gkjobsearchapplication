@@ -22,7 +22,7 @@ class Home extends Component {
           <br />
           abilities and potential.
         </p>
-        <Link to="/jobs">
+        <Link to="/jobs" className="link-style">
           <button
             type="button"
             className="find-jobs-button"

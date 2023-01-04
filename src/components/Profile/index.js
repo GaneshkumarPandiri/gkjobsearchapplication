@@ -93,7 +93,7 @@ class Profile extends Component {
   }
 
   renderLoader = () => (
-    <div className="loader-container-profile" testid="loader">
+    <div className="loader-container-profile">
       <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
     </div>
   )

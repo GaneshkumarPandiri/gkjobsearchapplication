@@ -11,6 +11,9 @@
   color: #ffffff;
   font-size: 70px;
 }
+.link-style {
+  text-decoration: none;
+}
 .home-paragraph {
   font-family: Roboto;
   color: #cbd5e1;

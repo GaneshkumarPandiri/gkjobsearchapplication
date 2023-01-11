@@ -5,14 +5,13 @@ import Home from './components/Home'
 import ProtectedRoute from './components/ProtectedRoute'
 import Jobs from './components/Jobs'
 import JobItemDetails from './components/JobItemDetails'
-import Header from './components/Header'
+
 import NotFound from './components/NotFound'
 
 import './App.css'
 
 const App = () => (
   <>
-    <Header />
     <Switch>
       <Route exact path="/login" component={Login} />
       <ProtectedRoute exact path="/" component={Home} />

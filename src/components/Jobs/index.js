@@ -7,6 +7,7 @@ import Profile from '../Profile'
 import EmploymentTypes from '../EmploymentTypes'
 import SalaryRanges from '../SalaryRanges'
 import JobItems from '../JobItems'
+import Header from '../Header'
 
 import './index.css'
 
@@ -209,52 +210,55 @@ class Jobs extends Component {
   render() {
     const {isLoading, searchJob} = this.state
     return (
-      <div className="jobs-container">
-        <div className="profile-and-filters">
-          <Profile />
-          <hr />
-          <h1 className="filter-heading">Type of Employment</h1>
-          <ul>
-            {employmentTypesList.map(item => (
-              <EmploymentTypes
-                employmentType={item}
-                onEmploymentType={this.onEmploymentType}
-                key={item.employmentTypeId}
-              />
-            ))}
-          </ul>
-          <hr />
-          <h1 className="filter-heading">Salary Range</h1>
-          <ul>
-            {salaryRangesList.map(item => (
-              <SalaryRanges
-                salaryRange={item}
-                onSalaryRange={this.onSalaryRange}
-                key={item.salaryRangeId}
-              />
-            ))}
-          </ul>
-        </div>
-        <div>
-          <div className="search-container">
-            <input
-              type="search"
-              placeholder="Search"
-              className="input-search"
-              value={searchJob}
-              onChange={this.onSearchJob}
-            />
-            <button
-              type="button"
-              className="search-button"
-              onClick={this.onSearchIconClick}
-            >
-              <BsSearch className="search-icon" />
-            </button>
+      <>
+        <Header />
+        <div className="jobs-container">
+          <div className="profile-and-filters">
+            <Profile />
+            <hr />
+            <h1 className="filter-heading">Type of Employment</h1>
+            <ul>
+              {employmentTypesList.map(item => (
+                <EmploymentTypes
+                  employmentType={item}
+                  onEmploymentType={this.onEmploymentType}
+                  key={item.employmentTypeId}
+                />
+              ))}
+            </ul>
+            <hr />
+            <h1 className="filter-heading">Salary Range</h1>
+            <ul>
+              {salaryRangesList.map(item => (
+                <SalaryRanges
+                  salaryRange={item}
+                  onSalaryRange={this.onSalaryRange}
+                  key={item.salaryRangeId}
+                />
+              ))}
+            </ul>
           </div>
-          <div>{isLoading ? this.renderLoader() : this.renderJobs()}</div>
+          <div>
+            <div className="search-container">
+              <input
+                type="search"
+                placeholder="Search"
+                className="input-search"
+                value={searchJob}
+                onChange={this.onSearchJob}
+              />
+              <button
+                type="button"
+                className="search-button"
+                onClick={this.onSearchIconClick}
+              >
+                <BsSearch className="search-icon" />
+              </button>
+            </div>
+            <div>{isLoading ? this.renderLoader() : this.renderJobs()}</div>
+          </div>
         </div>
-      </div>
+      </>
     )
   }
 }

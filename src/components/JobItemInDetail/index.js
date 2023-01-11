@@ -1,3 +1,5 @@
+import {FcRating} from 'react-icons/fc'
+
 import './index.css'
 import SimilarJobItem from '../SimilarJobsItem'
 
@@ -26,7 +28,10 @@ const JobItemInDetail = props => {
           />
           <div className="company-rating">
             <h1 className="job-title">{title}</h1>
-            <p>{rating}</p>
+            <div className="rating-container">
+              <FcRating />
+              <p className="rating">{rating}</p>
+            </div>
           </div>
         </div>
         <div className="package-content">
